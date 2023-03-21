@@ -1,0 +1,75 @@
+// Background Cover
+%bg-cover {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	&>img {
+		display: none;
+	}
+}
+
+.bg-cover {
+	@extend %bg-cover;
+}
+
+%bg-primary {
+	color: $white;
+	background: $primary;
+}
+
+.bg-primary {
+	@extend %bg-primary;
+}
+
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+// Fonts
+// %font-roboto {
+//     font-family: $font-roboto;
+// }
+// .font-roboto {
+//     @extend %font-roboto;
+// }
+
+// %font-open-sans {
+//     font-family: $font-open-sans;
+// }
+// .font-open-sans {
+//     @extend %font-open-sans;
+// }
+
+// Visibility
+.hide-sm {
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+}
+
+// List
+ol {
+	padding-left: 0.9375rem;
+}
+
+// Text
+.text-transform-none {
+	text-transform: none !important;
+}
+
+.text-underline {
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+@for $i from 1 through 9 {
+	.font-#{$i*100} {
+		font-weight: $i * 100;
+	}
+}
