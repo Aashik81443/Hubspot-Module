@@ -6,6 +6,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	// background: url(#{$image-path}/bg-body.jpg) center;
+	// background-color: #171618;
 
 	@include media-breakpoint-up(xxl) {
 		@include font-size(1.125rem);

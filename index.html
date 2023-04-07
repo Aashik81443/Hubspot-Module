@@ -5,53 +5,908 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
 	<link rel="stylesheet" href="style.css">
-	<title>Page title</title>
+	<link rel="stylesheet" href="vendors/slick/slick.css">
+	<link rel="stylesheet" href="vendors/fancybox/jquery.fancybox.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<title>Components</title>
 </head>
 
 <body>
-	<header id="header" class="site-header pb-3">
-	</header> <!-- / .site-header -->
-
-	<main id="main" class="site-content">
-		<div class="container">
-			<div class="tab">
-				<div>
-					<ul class="tab-list">
-						<li><button class="btn-primary active">Tab 1</button></li>
-						<li><button class="btn-primary">Tab 2</button></li>
-						<li><button class="btn-primary">Tab 3</button></li>
-					</ul>
-				</div>
-				<div class="tab-content">
-					<div class="tab-item show" id="tab-1">
-						<h3>Tab1</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta esse dolorum distinctio
-							temporibus at
-							perferendis minima magnam consectetur natus? Nemo eum sequi molestiae nulla! Deserunt!</p>
-					</div>
-					<div class="tab-item" id="tab-2">
-						<h3>Tab2</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta esse dolorum distinctio </p>
-					</div>
-					<div class="tab-item" id="tab-3">
-						<h3>Tab3</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta esse dolorum distinctio
-							temporibus at
-							perferendis minima magnam consectetur natus? Nemo eum sequi molestiae nulla! Deserunt! Lorem
-							ipsum dolor sit amet consectetur adipisicing elit. Soluta esse dolorum distinctio</p>
-					</div>
+	<div class="site-wrapper mb-5">
+		<header id="header" class="site-header mb-5">
+			<!-- <div class="site-header__top">
+				<div class="custom-container">
+					<a href="#" class="link-text">Explore our Floor Plans & Pricing
+					</a>
 				</div>
 			</div>
-		</div>
-	</main> <!-- / .site-content -->
+			<div class="site-header__bottom">
+				<div class="custom-container">
+					<nav class="navbar">
+						<div class="site-header__logo">
+							<a class="navbar-brand" href="#">
+								<img src="assets/images/blue-ridge-logo.png" alt="Header Logo">
+							</a>
+						</div>
+						<div class="nav-wrap">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Our Community
+										<span class="icon">&#8964;</span>
+									</a>
+									<ul class="nav-dropdown">
+										<li>
+											<a href="#!">Web Design</a>
+										</li>
+										<li>
+											<a href="#!">Web Development</a>
+										</li>
+										<li>
+											<a href="#!">Graphic Design</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Living Options<span class="icon">&#8964;</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Exclusive Programs<span class="icon">&#8964;</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Gallery</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Floor Plans</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Contact Us<span class="icon">&#8964;</span></a>
+								</li>
 
-	<footer id="footer" class="site-footer">
-	</footer> <!-- / .site-footer -->
+							</ul>
+							<div class="widgets">
+								<span class="micro-header-placeholder">
+									<span>Leasing &amp; Sales Inquiries: <br> <a href="tel:7063097005"
+											data-wpel-link="internal">706.309.7005</a></span><br>
+									<span>All Other Inquiries: <a href="tel:7069466000"
+											data-wpel-link="internal">706.946.6000</a></span><br>
+								</span>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div> -->
+		</header> <!-- / .site-header -->
+
+		<main id="main" class="site-content">
+			<div class="container">
+				<h2><em>Tab</em></h2>
+				<hr>
+				<div class="tab">
+					<div class="tab-heading">
+						<ul class="tab-list">
+							<li><button class="btn-primary active" cid="tab-1">Tab 1</button></li>
+							<li><button class="btn-primary" cid="tab-2">Tab 2</button></li>
+							<li><button class="btn-primary" cid="tab-3">Tab 3</button></li>
+						</ul>
+					</div>
+					<div class="tab-content">
+						<div class="tab-item show" id="tab-1">
+							<h3>Tab1</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta esse dolorum distinctio
+							</p>
+						</div>
+						<div class="tab-item" id="tab-2">
+							<h3>Tab2</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta esse dolorum distinctio
+							</p>
+						</div>
+						<div class="tab-item" id="tab-3">
+							<h3>Tab3</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta esse dolorum distinctio
+								temporibus at
+								perferendis minima magnam consectetur natus? Nemo eum sequi molestiae nulla! Deserunt!
+								Lorem
+								ipsum dolor sit amet consectetur adipisicing elit. Soluta esse dolorum distinctio</p>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>card</em></h2>
+				<div class="card-service">
+					<div class="card-service__media">
+						<img src="/assets/images/card-1.jpg" class="card-img-top" alt="Card Image">
+					</div>
+					<div class="card-service__content">
+						<h3>Dōtonbori Canal</h3>
+						<p>Is a manmade waterway dug in the early 1600's and now displays many
+							landmark commercial locals and vivid neon signs.</p>
+						<div class="btn-wrap">
+							<a href="#" class="btn">Learn More</a>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>card overlay</em></h2>
+				<div class="card-overlay bg-cover">
+					<img src="assets/images/Senior-Independent-Living.jpg" alt="">
+					<div class="card-overlay__content">
+						<h4>senior Assisted living</h4>
+						<h5>Learn more</h5>
+					</div>
+					<a href="#" class="stretched-link"></a>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>blockquote card</em></h2>
+				<blockquote class="blockquote">
+					<div class="blockquote-author">
+						<img src="" alt="" class="author-media">
+						<div class="author-name">
+							<h4>mike Demien</h4>
+							<ul class="rating-icon">
+								<li><img src="assets/images/star-icon.svg" alt=""></li>
+								<li><img src="assets/images/star-icon.svg" alt=""></li>
+								<li><img src="assets/images/star-icon.svg" alt=""></li>
+								<li><img src="assets/images/star-icon.svg" alt=""></li>
+								<li><img src="assets/images/star-icon.svg" alt=""></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="blockquote-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam ipsam eligendi eos
+							animi, quae cupiditate molestiae blanditiis expedita quas magnam natus exercitationem
+							perferendis laudantium ea! Nemo placeat, at ducimus deserunt sit impedit molestias, eligendi
+							incidunt blanditiis dolore dicta est alias ab deleniti ex, possimus ipsam perferendis.
+						</p>
+					</div>
+
+				</blockquote>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>offer card</em></h2>
+				<div class="offer-card">
+					<div class="offer-card__media">
+						<img src="" alt="">
+					</div>
+					<div class="offer-card__content">
+						<span class="sub-title">Special remodal pricing</span>
+						<div class="main-title">
+							<h3>
+								two months free rent<sup>*</sup>
+								<span class="sm-text"><sup>*</sup>discount applies to 1st and 4th month.</span>
+							</h3>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>details card</em></h2>
+				<div class="details-card">
+					<div class="details-card__media">
+						<img src="" alt="">
+					</div>
+					<div class="details-card__content">
+						<div class="left">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ex aliquam autem iusto
+								pariatur sit. Quis molestiae aliquam ratione nobis. Est qui porro ab provident,
+								reiciendis reprehenderit debitis! Perferendis, pariatur?</p>
+						</div>
+
+						<div class="right">
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, porro! Tenetur porro
+								eveniet cupiditate voluptas? Cum eius veritatis excepturi a, atque porro, provident
+								tempora architecto assumenda animi quo magnam ipsam?</p>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>Testimonial Slider with arrows</em></h2>
+				<div class="custom-slider">
+					<div class="slider-item">
+						<blockquote class="blockquote">
+							<div class="blockquote-author">
+								<img src="" alt="" class="author-media">
+								<div class="author-name">
+									<h4>mike Demien</h4>
+									<ul class="rating-icon">
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="blockquote-content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam ipsam
+									eligendi eos
+									animi, quae cupiditate molestiae blanditiis expedita quas magnam natus
+									exercitationem
+									perferendis laudantium ea! Nemo placeat, at ducimus deserunt sit impedit molestias,
+									eligendi
+									incidunt blanditiis dolore dicta est alias ab deleniti ex, possimus ipsam
+									perferendis.
+								</p>
+							</div>
+
+						</blockquote>
+					</div>
+					<div class="slider-item">
+						<blockquote class="blockquote">
+							<div class="blockquote-author">
+								<img src="" alt="" class="author-media">
+								<div class="author-name">
+									<h4>mike Demien</h4>
+									<ul class="rating-icon">
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="blockquote-content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam ipsam
+									eligendi eos
+									animi, quae cupiditate molestiae blanditiis expedita quas magnam natus
+									exercitationem
+									perferendis laudantium ea! Nemo placeat, at ducimus deserunt sit impedit molestias,
+									eligendi
+									incidunt blanditiis dolore dicta est alias ab deleniti ex, possimus ipsam
+									perferendis.
+								</p>
+							</div>
+
+						</blockquote>
+					</div>
+					<div class="slider-item">
+						<blockquote class="blockquote">
+							<div class="blockquote-author">
+								<img src="" alt="" class="author-media">
+								<div class="author-name">
+									<h4>mike Demien</h4>
+									<ul class="rating-icon">
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="blockquote-content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam ipsam
+									eligendi eos
+									animi, quae cupiditate molestiae blanditiis expedita quas magnam natus
+									exercitationem
+									perferendis laudantium ea! Nemo placeat, at ducimus deserunt sit impedit molestias,
+									eligendi
+									incidunt blanditiis dolore dicta est alias ab deleniti ex, possimus ipsam
+									perferendis.
+								</p>
+							</div>
+
+						</blockquote>
+					</div>
+					<div class="slider-item">
+						<blockquote class="blockquote">
+							<div class="blockquote-author">
+								<img src="" alt="" class="author-media">
+								<div class="author-name">
+									<h4>mike Demien</h4>
+									<ul class="rating-icon">
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="blockquote-content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam ipsam
+									eligendi eos
+									animi, quae cupiditate molestiae blanditiis expedita quas magnam natus
+									exercitationem
+									perferendis laudantium ea! Nemo placeat, at ducimus deserunt sit impedit molestias,
+									eligendi
+									incidunt blanditiis dolore dicta est alias ab deleniti ex, possimus ipsam
+									perferendis.
+								</p>
+							</div>
+
+						</blockquote>
+					</div>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>Testimonial Slider with dots</em></h2>
+				<div class="dots-slider">
+					<div class="slider-item">
+						<blockquote class="blockquote">
+							<div class="blockquote-author">
+								<img src="" alt="" class="author-media">
+								<div class="author-name">
+									<h4>mike Demien</h4>
+									<ul class="rating-icon">
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="blockquote-content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam ipsam
+									eligendi eos
+									animi, quae cupiditate molestiae blanditiis expedita quas magnam natus
+									exercitationem
+									perferendis laudantium ea! Nemo placeat, at ducimus deserunt sit impedit molestias,
+									eligendi
+									incidunt blanditiis dolore dicta est alias ab deleniti ex, possimus ipsam
+									perferendis.
+								</p>
+							</div>
+
+						</blockquote>
+					</div>
+					<div class="slider-item">
+						<blockquote class="blockquote">
+							<div class="blockquote-author">
+								<img src="" alt="" class="author-media">
+								<div class="author-name">
+									<h4>mike Demien</h4>
+									<ul class="rating-icon">
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="blockquote-content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam ipsam
+									eligendi eos
+									animi, quae cupiditate molestiae blanditiis expedita quas magnam natus
+									exercitationem
+									perferendis laudantium ea! Nemo placeat, at ducimus deserunt sit impedit molestias,
+									eligendi
+									incidunt blanditiis dolore dicta est alias ab deleniti ex, possimus ipsam
+									perferendis.
+								</p>
+							</div>
+
+						</blockquote>
+					</div>
+					<div class="slider-item">
+						<blockquote class="blockquote">
+							<div class="blockquote-author">
+								<img src="" alt="" class="author-media">
+								<div class="author-name">
+									<h4>mike Demien</h4>
+									<ul class="rating-icon">
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="blockquote-content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam ipsam
+									eligendi eos
+									animi, quae cupiditate molestiae blanditiis expedita quas magnam natus
+									exercitationem
+									perferendis laudantium ea! Nemo placeat, at ducimus deserunt sit impedit molestias,
+									eligendi
+									incidunt blanditiis dolore dicta est alias ab deleniti ex, possimus ipsam
+									perferendis.
+								</p>
+							</div>
+
+						</blockquote>
+					</div>
+					<div class="slider-item">
+						<blockquote class="blockquote">
+							<div class="blockquote-author">
+								<img src="" alt="" class="author-media">
+								<div class="author-name">
+									<h4>mike Demien</h4>
+									<ul class="rating-icon">
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="blockquote-content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam ipsam
+									eligendi eos
+									animi, quae cupiditate molestiae blanditiis expedita quas magnam natus
+									exercitationem
+									perferendis laudantium ea! Nemo placeat, at ducimus deserunt sit impedit molestias,
+									eligendi
+									incidunt blanditiis dolore dicta est alias ab deleniti ex, possimus ipsam
+									perferendis.
+								</p>
+							</div>
+
+						</blockquote>
+					</div>
+					<div class="slider-item">
+						<blockquote class="blockquote">
+							<div class="blockquote-author">
+								<img src="" alt="" class="author-media">
+								<div class="author-name">
+									<h4>mike Demien</h4>
+									<ul class="rating-icon">
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="blockquote-content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam ipsam
+									eligendi eos
+									animi, quae cupiditate molestiae blanditiis expedita quas magnam natus
+									exercitationem
+									perferendis laudantium ea! Nemo placeat, at ducimus deserunt sit impedit molestias,
+									eligendi
+									incidunt blanditiis dolore dicta est alias ab deleniti ex, possimus ipsam
+									perferendis.
+								</p>
+							</div>
+
+						</blockquote>
+					</div>
+					<div class="slider-item">
+						<blockquote class="blockquote">
+							<div class="blockquote-author">
+								<img src="" alt="" class="author-media">
+								<div class="author-name">
+									<h4>mike Demien</h4>
+									<ul class="rating-icon">
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="blockquote-content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam ipsam
+									eligendi eos
+									animi, quae cupiditate molestiae blanditiis expedita quas magnam natus
+									exercitationem
+									perferendis laudantium ea! Nemo placeat, at ducimus deserunt sit impedit molestias,
+									eligendi
+									incidunt blanditiis dolore dicta est alias ab deleniti ex, possimus ipsam
+									perferendis.
+								</p>
+							</div>
+
+						</blockquote>
+					</div>
+					<div class="slider-item">
+						<blockquote class="blockquote">
+							<div class="blockquote-author">
+								<img src="" alt="" class="author-media">
+								<div class="author-name">
+									<h4>mike Demien</h4>
+									<ul class="rating-icon">
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="blockquote-content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam ipsam
+									eligendi eos
+									animi, quae cupiditate molestiae blanditiis expedita quas magnam natus
+									exercitationem
+									perferendis laudantium ea! Nemo placeat, at ducimus deserunt sit impedit molestias,
+									eligendi
+									incidunt blanditiis dolore dicta est alias ab deleniti ex, possimus ipsam
+									perferendis.
+								</p>
+							</div>
+
+						</blockquote>
+					</div>
+					<div class="slider-item">
+						<blockquote class="blockquote">
+							<div class="blockquote-author">
+								<img src="" alt="" class="author-media">
+								<div class="author-name">
+									<h4>mike Demien</h4>
+									<ul class="rating-icon">
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+										<li><img src="assets/images/star-icon.svg" alt=""></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="blockquote-content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam ipsam
+									eligendi eos
+									animi, quae cupiditate molestiae blanditiis expedita quas magnam natus
+									exercitationem
+									perferendis laudantium ea! Nemo placeat, at ducimus deserunt sit impedit molestias,
+									eligendi
+									incidunt blanditiis dolore dicta est alias ab deleniti ex, possimus ipsam
+									perferendis.
+								</p>
+							</div>
+
+						</blockquote>
+					</div>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>Filter Block</em></h2>
+				<div class="search-block__wrap">
+					<div class="search-block">
+						<select name="cars" class="select">
+							<option value="volvo">Volvo</option>
+							<option value="saab">Saab</option>
+							<option value="opel">Opel</option>
+							<option value="audi">Audi</option>
+						</select>
+						<select name="cars" class="select">
+							<option value="volvo">Volvo</option>
+							<option value="saab">Saab</option>
+							<option value="opel">Opel</option>
+							<option value="audi">Audi</option>
+						</select>
+						<select name="cars" class="select">
+							<option value="volvo">Volvo</option>
+							<option value="saab">Saab</option>
+							<option value="opel">Opel</option>
+							<option value="audi">Audi</option>
+						</select>
+						<select name="cars" class="select">
+							<option value="volvo">Volvo</option>
+							<option value="saab">Saab</option>
+							<option value="opel">Opel</option>
+							<option value="audi">Audi</option>
+						</select>
+						<select name="cars" class="select">
+							<option value="volvo">Volvo</option>
+							<option value="saab">Saab</option>
+							<option value="opel">Opel</option>
+							<option value="audi">Audi</option>
+						</select>
+					</div>
+					<div class="btn-wrap">
+						<button class="btn-secondary">Search</button>
+					</div>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>CTA Button</em></h2>
+				<div class="btn-wrap">
+					<a href="#" class="cta-button"><span class="icon">i</span><span>Questions?Call Us At</span>
+						(239) 908-2921
+					</a>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>Tile Icon</em></h2>
+				<ul class="tile-icon">
+					<li>
+						<span class="icon"></span>
+						Questions?Call Us At
+						<a href="tel:2399082921">(239) 908-2921</a>
+					</li>
+				</ul>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>Accordion</em></h2>
+				<div class="custom-accordion">
+					<ul class="accordion-list">
+						<li>
+							<h3>How much does a website cost?</h3>
+							<div class="answer">
+								<p>While we would love to be able to give a definitive, fixed price for a website, it
+									really depends on the specific needs for each individual business. If one business
+									needs a website comprised of five pages, while another has a substantially larger
+									site of over 100 pages - obviously those projects are going to command different
+									price points.</p>
+
+								<p>With that being said - here are some general guidelines on what to expect from a
+									pricing standpoint.</p>
+
+								<p>If you can get by with a small website (between 3 - 10 pages) using a pre-designed
+									template, you can expect to pay approximately $2,500.00. A mid-sized website that
+									has anywhere from 11 - 25 pages, but still uses a pre-made template, will be between
+									$3,000.00 - $5,000.00. If you have a lot of pages, are looking for something
+									completely custom, or are looking for something that has special functionality such
+									as eCommerce, custom calculators, or integrations with other services, you may be
+									looking at anywhere from $10,000 - $20,000.</p>
+
+								<p>Ultimately, the takeaway here is that we can accommodate projects of just about any
+									budget - so long as expectations are set accordingly.</p>
+
+							</div>
+						</li>
+						<li>
+							<h3>Are there any monthly fees?</h3>
+							<div class="answer">
+								<p>This will vary depending on the type of project. For logo & branding projects, fees
+									will be one-time costs. For website projects, we will typically charge a monthly
+									fee, depending on the level of service you choose. To view a full list of our
+									monthly packages, click here.</p>
+							</div>
+						</li>
+						<li>
+							<h3>How much does a logo cost?</h3>
+							<div class="answer">
+								<p>Logo projects typically cost between $3,000 - $5000.</p>
+								<p>"Why so much?" many people ask. To answer simply - because they require a lot of
+									work. At least, to do them properly. And of all of the investments that you will
+									make for your business, your logo & branding is one area where you don't want to
+									skimp.</p>
+
+								<p>In business, image is everything. And while your overall brand is based on far more
+									than just your logo, a bad logo can create a strong first impression (for better or
+									for worse).</p>
+
+								<p>A properly designed logo requires hours of research, and hundreds of sketches and
+									iterations. And with an increasing number of branded businesses in the world, doing
+									research to verify that your mark is unique is a tedious yet necessary part of the
+									process.</p>
+
+								<p>With each logo project that we complete, we provide 3 - 5 unique logo concepts, a
+									branding guide that details how to properly use the logo, several versions of the
+									logo that are print-ready, and can be sent to any printer or publisher for easy use,
+									detailed color schemes, typography & associated fonts, and design samples of your
+									new logo.</p>
+
+								<p>Click here to learn more about how we approach our logo projects, and why we believe
+									that we are the top logo & branding agency in the area.</p>
+							</div>
+						</li>
+						<li>
+							<h3>What separates Right Creative from other top design agencies in the area?</h3>
+							<div class="answer">
+								<p>Experience, quality, and results.</p>
+								<p><strong>Experience.</strong> We have been designing websites professional since the
+									early days of the web - before CSS was mainstream, and people still used tables for
+									their website layouts. In the 20+ years that we have been doing this, we have work
+									with and learned from many of the top voices in several industries. To put it simply
+									- there are very few people in the world, let alone the area that can top our years
+									of experience.</p>
+
+								<p><strong>Quality</strong> At Right Creative, we hold an almost unrealistic standard
+									for quality. We demand excellence in every project we take on, and firmly believe
+									that the quality of our work demonstrates our commitment to these standards.</p>
+
+								<p><strong>Results</strong> More than anything else, our focus is, and will always be
+									getting results for clients. We don't care how pretty something is - if it is not
+									resulting in the growth or obtaining of goals for our clients, then it is not time
+									or money well spent. Our mission is to turn visitors into paying customers - and
+									every decision that we make is rooted in that mission.</p>
+
+								<p><strong>Other distinguishing features</strong> Some of the other things that separate
+									Right Creative from other top-rated agencies are: we hand-code all of our websites
+									for maximum results. We don't rely on Wordpress, plugins, templates or themes to
+									accomplish things, and are therefore not locked in to the limits they pose.</p>
+							</div>
+						</li>
+						<li>
+							<h3>We're just starting out. How can we afford your services?</h3>
+							<div class="answer">
+								<p>We started this business from scratch, and know full-well how tight money can be when
+									you are first starting out. We empathize with the struggles of new business owners,
+									and therefore work diligently so that the new businesses that we work with succeed.
+								</p>
+
+								<p>The primary criteria we look for when working with new businesses is the seriousness
+									of the business owner. While it is natural for a new business owner to be cautious
+									with the money they spend - we do look for a commitment to growth. If you do not
+									have a specific plan for how you intend to grow your business, then the reality is -
+									you will probably never be in a good position to afford our services.</p>
+
+								<p>With that said - if you are growth-minded, then we are happy to help you achieve that
+									growth, and are willing to work with you to come up with a plan that fits within
+									your budget and comfort level. Whether this is a smaller site, financing options, or
+									a payment plan - we are confident that we can figure out something that will be
+									mutually beneficial.</p>
+
+							</div>
+						</li>
+						<li>
+							<h3>What is the difference between a pre-designed site and a custom site?</h3>
+							<div class="answer">
+								<p>The difference between pre-designed and custom sites is a lot like the difference
+									between buying a home versus building a home.</p>
+
+								<p>Pre-designed sites start with a website that has already been designed and coded.
+									These sites will allow you to customize colors, fonts, photos, content, and your
+									logo - but does not allow you to rearrange, reposition, or change the layout of the
+									site. This option is great for newer businesses or businesses with a smaller budget.
+									You not only get the benefit of a hand-coded, customized site, but you also benefit
+									from a smaller price tag and faster turnaround time.</p>
+
+								<p>Custom sites are built from scratch, exactly to your businesses needs. While custom
+									sites often have a bigger price tag attached to them, they are also going to be more
+									effective at converting your visitors into paying customers.</p>
+
+							</div>
+						</li>
+						<li>
+							<h3>Can I make edits to my own website once it launches?</h3>
+							<div class="answer">
+								<p>Yes and no. With each client that we work with, we designate time to figure out what
+									content clients will need to edit on a regular basis, and create tools to allow them
+									to do that easily. For things such as news, articles, blogs, and portfolios, clients
+									will have access to the Content Management System, and add/edit/delete those things
+									as needed.</p>
+
+								<p>For other areas of the site, we request that our clients trust us to make those
+									edits, so to maintain the integrity of their website.</p>
+
+								<p>It is very common for clients who have full control over their site to see it
+									deteriorate after a while due to non-designers & non-developers adding content to
+									the site using markup & styling that is not cohesive with the rest of the site. What
+									results is a website filled with pages containing broken-looking content, and
+									improperly formatted text.</p>
+
+								<p>Because we care about the quality of our sites, the reputations of our clients, and
+									the results that they see - we prefer to let our clients be the experts at what they
+									do - and us to be the experts at what we do.</p>
+
+							</div>
+						</li>
+					</ul>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>Lightbox card</em></h2>
+				<div class="lightbox-card">
+					<div class="media">
+						<img src="assets/images/card-1.jpg" alt="">
+						<a href="https://www.youtube.com/watch?v=q1HZj40ZQrM" data-fancybox class="play-icon"></a>
+					</div>
+					<div class="content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, maxime provident? Fugit
+							veritatis error eaque omnis in corrupti suscipit esse. Inventore consequuntur provident vero
+							ipsam odio a unde nulla animi!</p>
+					</div>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>card icon</em></h2>
+				<div class="card-icon">
+					<div class="icon"></div>
+					<div class="content">
+						<h3>Contact Us
+							<span class="stroke-text">01</span>
+						</h3>
+						<p>As soon as our team receives your request, we will contact you and get started with your
+							property
+							evaluation immediately.</p>
+					</div>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>card with counts</em></h2>
+				<div class="benifits-card">
+					<h3>Selling Your House To Us, The Easy Way</h3>
+					<div class="number-list">
+						<ul>
+							<li>We pay all the closing costs</li>
+							<li>We pay all the closing costs</li>
+							<li>We pay all the closing costs</li>
+							<li>We pay all the closing costs</li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>copay card</em></h2>
+				<div class="copay-card">
+					<div class="copay-card__title">
+						<h3 style="font-family: 'Montserrat', sans-serif; font-weight: 800;">Betaine Anhydrous <br> for
+							Oral Solution</h3>
+					</div>
+					<div class="copay-card__content">
+						<div class="info">
+							<p><strong class="bold-heading">RX Bin:</strong><span class="value">6154544</span></p>
+							<p><strong class="bold-heading">RX Bin:</strong><span class="value">6154544</span></p>
+							<p><strong class="bold-heading">RX Bin:</strong><span class="value">6154544</span></p>
+							<p><strong class="bold-heading">RX Bin:</strong><span class="value">6154544</span></p>
+						</div>
+						<div class="logo">
+							<img src="assets/images/logo.png" alt="">
+						</div>
+					</div>
+					<div class="hr-line"></div>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>list Counts</em></h2>
+				<div class="number-counts">
+					<ul>
+						<li>
+							<strong>We pay all the closing costs</strong>
+						</li>
+						<li>
+							<strong>We pay all the closing costs</strong>
+						</li>
+						<li>
+							<strong>We pay all the closing costs</strong>
+						</li>
+						<li>
+							<strong>We pay all the closing costs</strong>
+						</li>
+					</ul>
+				</div>
+				<hr>
+				<hr>
+				<h2 class="mb-3"><em>list circle</em></h2>
+				<div class="list-circle">
+					<ul>
+						<li>
+							We pay all the closing costs
+						</li>
+						<li>We pay all the closing costs</li>
+						<li>We pay all the closing costs</li>
+						<li>We pay all the closing costs</li>
+					</ul>
+				</div>
+			</div>
+		</main> <!-- / .site-content -->
+
+		<footer id="footer" class="site-footer">
+		</footer> <!-- / .site-footer -->
+
+	</div>
 
 
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="vendors/slick/slick.min.js"></script>
+	<script src="vendors/fancybox/jquery.fancybox.min.js"></script>
 </body>
+
 
 </html>

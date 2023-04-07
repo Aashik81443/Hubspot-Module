@@ -1,1 +1,157 @@
 // Typography
+
+
+.custom-container {
+    max-width: 1310px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.box-wrap {}
+
+.box {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(134, 90, 8);
+    padding: 25px;
+
+    &-content {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $black;
+        border-radius: 18px;
+
+        h2 {
+            color: $white;
+            text-transform: uppercase;
+            font-size: 60px;
+        }
+    }
+
+    &--alt {
+        .box-content__wrap {
+            position: relative;
+            height: 100%;
+            padding: 5px;
+            background: $black;
+
+            &:before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 50px;
+                background: red;
+                z-index: 1;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 50px;
+                background: red;
+                z-index: 1;
+            }
+        }
+
+        .box-content {
+            position: relative;
+            z-index: 11;
+            margin: 5px;
+
+            @include media-breakpoint-down(xl) {
+                color: red;
+            }
+
+            @include media-breakpoint-down(lg) {
+                color: red;
+            }
+
+            @include media-breakpoint-down(md) {
+                color: red;
+            }
+
+            @include media-breakpoint-down(sm) {
+                color: red;
+            }
+        }
+    }
+}
+
+
+.tab-menu {
+    margin-top: 34px;
+}
+
+.tab-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tab-menu ul li {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    text-align: center;
+}
+
+.tab-menu ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.44px;
+    font-family: 'Oswald';
+    font-weight: bold;
+    display: inline-block;
+    padding: 18px 26px;
+    display: block;
+    text-decoration: none;
+    transition: 0.5s all;
+    background: #d0d062;
+    border: 2px solid #d0d062;
+    border-bottom: 0;
+}
+
+.tab-menu ul li a:hover {
+    background: #d0d062;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tab-menu ul li a.active {
+    background: #f4fcce;
+    color: #000;
+    text-decoration: none;
+}
+
+.tab-box {
+    display: none;
+}
+
+.tab-teaser {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Oswald';
+}
+
+.tab-main-box {
+    background: #f4fcce;
+    padding: 10px 30px;
+    border: 2px solid #d0d062;
+    margin-top: -2px
+}
